@@ -1,0 +1,15 @@
+ContextMap ImeContextMap {
+	contains MDP
+	contains PostTrade
+	contains IME_OMS
+	
+	MDP -> PostTrade
+	
+	MDP -> IME_OMS
+	
+	IME_OMS -> PostTrade
+}
+
+BoundedContext MDP
+BoundedContext PostTrade
+BoundedContext IME_OMS
