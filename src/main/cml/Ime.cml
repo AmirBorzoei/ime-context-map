@@ -3,9 +3,9 @@ ContextMap ImeContextMap {
 	contains PostTrade
 	contains IME_OMS
 	
-	MDP -> PostTrade
+	MDP [OHS] -> PostTrade
 	
-	MDP -> IME_OMS
+	MDP [OHS] -> IME_OMS
 	
 	IME_OMS -> PostTrade
 }
