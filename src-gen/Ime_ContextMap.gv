@@ -1,36 +1,48 @@
 digraph "ContextMapGraph" {
 graph ["imagepath"="/tmp/GraphvizJava"]
-"Accounting" ["margin"="0.3","orientation"="177","shape"="egg","fontsize"="16","style"="bold","label"="Accounting\n","fontname"="sans-serif"]
-"PostTrade" ["margin"="0.3","orientation"="56","shape"="egg","fontsize"="16","style"="bold","label"="PostTrade\n","fontname"="sans-serif"]
-"IME_OMS" ["margin"="0.3","orientation"="254","shape"="egg","fontsize"="16","style"="bold","label"="IME_OMS\n","fontname"="sans-serif"]
-"MDP" ["margin"="0.3","orientation"="134","shape"="egg","fontsize"="16","style"="bold","label"="MDP\n","fontname"="sans-serif"]
-"Personage" ["margin"="0.3","orientation"="242","shape"="egg","fontsize"="16","style"="bold","label"="Personage\n","fontname"="sans-serif"]
+"Accounting" ["margin"="0.3","orientation"="35","shape"="egg","fontsize"="16","style"="bold","label"="Accounting\n","fontname"="sans-serif"]
+"PostTrade" ["margin"="0.3","orientation"="157","shape"="egg","fontsize"="16","style"="bold","label"="PostTrade\n","fontname"="sans-serif"]
+"IME" ["margin"="0.3","orientation"="10","shape"="egg","fontsize"="16","style"="bold","label"="IME\n","fontname"="sans-serif"]
+"MDP" ["margin"="0.3","orientation"="301","shape"="egg","fontsize"="16","style"="bold","label"="MDP\n","fontname"="sans-serif"]
+"PreTrade" ["margin"="0.3","orientation"="37","shape"="egg","fontsize"="16","style"="bold","label"="PreTrade\n","fontname"="sans-serif"]
+"Personage" ["margin"="0.3","orientation"="178","shape"="egg","fontsize"="16","style"="bold","label"="Personage\n","fontname"="sans-serif"]
+"Wallet" ["margin"="0.3","orientation"="150","shape"="egg","fontsize"="16","style"="bold","label"="Wallet\n","fontname"="sans-serif"]
 "Accounting" -> "PostTrade" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">D</td></tr>
 </table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">U</td></tr>
 </table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
-"IME_OMS" -> "PostTrade" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+"IME" -> "MDP" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">D</td></tr>
 </table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">U</td></tr>
+</table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
+"MDP" -> "PreTrade" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">D</td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="1" border="0">
+<tr><td bgcolor="white" sides="r">U</td><td sides="trbl" bgcolor="white"><font>OHS</font></td></tr>
 </table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
 "MDP" -> "PostTrade" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">D</td></tr>
 </table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="1" border="0">
 <tr><td bgcolor="white" sides="r">U</td><td sides="trbl" bgcolor="white"><font>OHS</font></td></tr>
 </table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
-"MDP" -> "IME_OMS" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+"PreTrade" -> "PostTrade" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">D</td></tr>
-</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="1" border="0">
-<tr><td bgcolor="white" sides="r">U</td><td sides="trbl" bgcolor="white"><font>OHS</font></td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">U</td></tr>
+</table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
+"Personage" -> "PreTrade" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">D</td></tr>
+</table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
+<tr><td bgcolor="white">U</td></tr>
 </table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
 "Personage" -> "PostTrade" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">D</td></tr>
 </table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">U</td></tr>
 </table>>,"style"="bold","label"="                                        ","dir"="none","fontname"="sans-serif"]
-"Personage" -> "IME_OMS" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
+"Wallet" -> "PreTrade" ["headlabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">D</td></tr>
 </table>>,"labeldistance"="0","fontsize"="12","taillabel"=<<table cellspacing="0" cellborder="0" border="0">
 <tr><td bgcolor="white">U</td></tr>

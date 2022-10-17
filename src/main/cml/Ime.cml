@@ -1,20 +1,34 @@
 ContextMap ImeContextMap {
+	contains IME
+
 	contains MDP
+	contains PreTrade
 	contains PostTrade
-	contains IME_OMS
+
 	contains Accounting
 	contains Personage
+	contains Wallet
+	
+
+	IME -> MDP
 	
 	MDP [OHS] -> PostTrade	
-	MDP [OHS] -> IME_OMS
-	Personage -> IME_OMS	
-	IME_OMS -> PostTrade
+	MDP [OHS] -> PreTrade
+	
+	Personage -> PreTrade
+	Wallet -> PreTrade
+	PreTrade -> PostTrade
 	Accounting -> PostTrade
 	Personage -> PostTrade
 }
 
+
+BoundedContext IME
+
 BoundedContext MDP
 BoundedContext PostTrade
-BoundedContext IME_OMS
+BoundedContext PreTrade
+
 BoundedContext Accounting
 BoundedContext Personage
+BoundedContext Wallet
