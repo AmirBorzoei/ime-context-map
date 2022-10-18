@@ -17,6 +17,7 @@ ContextMap ImeContextMap {
 	
 	Personage -> PreTrade
 	Wallet -> PreTrade
+	
 	PreTrade -> PostTrade
 	Accounting -> PostTrade
 	Personage -> PostTrade
@@ -26,8 +27,8 @@ ContextMap ImeContextMap {
 BoundedContext IME
 
 BoundedContext MDP
-BoundedContext PostTrade
 BoundedContext PreTrade
+BoundedContext PostTrade
 
 BoundedContext Accounting
 BoundedContext Personage
